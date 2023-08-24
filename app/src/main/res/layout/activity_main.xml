@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/imgDog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/dog" />
+
+
+    <EditText
+        android:drawableEnd="@drawable/baseline_person"
+        android:layout_margin="20sp"
+        android:padding="10sp"
+        android:layout_below="@+id/imgDog"
+        android:id="@+id/edtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira o nome de usuário"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:drawableEnd="@drawable/baseline_lock"
+        android:layout_margin="20sp"
+        android:padding="10sp"
+        android:layout_below="@+id/edtUsuario"
+        android:id="@+id/edtUsuariosenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira a senha do usuario" />
+    <Button
+        android:layout_below="@+id/edtUsuariosenha"
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar" />
+    <Button
+        android:layout_below="@+id/btnEntrar"
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sair" />
+
+
+</RelativeLayout>
